@@ -6,6 +6,7 @@ const input = document.getElementById("searchText");
 const temp = document.getElementById("temp");
 const city = document.getElementById("city");
 const image = document.getElementById("image");
+const body = document.getElementById("body");
 
 // 도시 이름을 입력하고, Enter키를 누루면 아래 함수가 실행됩니다.
 searchForm.addEventListener("submit", function(event) {
@@ -112,6 +113,7 @@ function setWeatherInfo(cityName, weatherInfo) {
   const weatherLink = imgLinks[weatherInfo.weather];
   image.src = `./img/${weatherLink}`; // 이곳에 이미지 파일의 경로를 입력해주면 이미지 파일이 표시됩니다.
 
+  body.style.background = `linear-gradient(to right, ${colors[weatherInfo.weather][0]}, ${colors[weatherInfo.weather][1]})`
   /**
    * 아래의 코드는 어떤 역할을 할까요?
    */
