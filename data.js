@@ -14,5 +14,21 @@ const imgLinks = {
   Clear: "sun.png",
   Rain: "rain.png",
   Snow: "snowing.png",
-  Clouds: "cloudy.png"
+  Clouds: "cloudy.png",
+  Thunderstorm: "strom.png",
+  Haze: "fog.png",
+  fog: "fog.png",
+  Drizzle: "rain.png"
+
+
 };
+const colors = {
+  Clear: ["#efff00", "#e80a0a"],
+  Rain: ["#6b678d", "#88b8c6"],
+  Snow: ["#6b678d", "#88b8c6"],
+  Clouds: ["#6a5274", "#9cb2e5"],
+  Thunderstorm: ["#6b678d", "#88b8c6"],
+  Haze: ["#b493ae", "#9cdee5"],
+  fog: ["#b493ae", "#9cdee5"],
+  Drizzle: ["#b493ae", "#9cdee5"],
+}
