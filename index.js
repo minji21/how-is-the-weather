@@ -81,7 +81,10 @@ function getWeatherData(lat, lng) {
          */
         console.log("우리가 받은 날씨 데이터 ", data);
 
-        resolve(); // 여기에 저희가 원하는 형식의 값을 넣어주세요!
+        resolve({
+          "temp" : data.main.temp,
+          "weather" : data.weather[0].main
+        }); // 여기에 저희가 원하는 형식의 값을 넣어주세요!
       });
     });
   });
