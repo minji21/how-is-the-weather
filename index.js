@@ -109,7 +109,7 @@ function setWeatherInfo(cityName, weatherInfo) {
   /**
    * data.js 파일에 있는 imgLinks 객체를 사용해 날씨에 맞는 이미지를 표시해보세요!
    */
-  const weatherLink = "sun.png";
+  const weatherLink = imgLinks[weatherInfo.weather];
   image.src = `./img/${weatherLink}`; // 이곳에 이미지 파일의 경로를 입력해주면 이미지 파일이 표시됩니다.
 
   /**
