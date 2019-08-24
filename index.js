@@ -46,8 +46,13 @@ function getGeoCode(city) {
          * }
          */
         console.log("우리가 받은 위치 데이터 ", data);
+        
 
-        resolve(); // 여기에 저희가 원하는 형식의 값을 넣어주세요!
+        resolve({
+          "lat" : data.results[0].geometry.location.lat,
+          "lng" : data.results[0].geometry.location.lng
+
+        }); // 여기에 저희가 원하는 형식의 값을 넣어주세요!
       });
     });
   });
